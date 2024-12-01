@@ -1,0 +1,44 @@
+/* Set a dark background for the entire AnchorPane */
+.root{
+    -fx-background-color: #2e2e2e; /* Dark gray background */
+}
+
+/* Style for the Label */
+.label {
+    -fx-text-fill: linear-gradient(to right, #2b9348,#70e000,#ccff33, ffff3f); /* Gradient text color */
+    /* -fx-font-size: 30px;  Larger text size */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 5, 0.2, 0, 0); /* Glow effect */
+}
+
+/* Style for Buttons */
+.button {
+    -fx-background-color: transparent; /* Transparent button background */
+    -fx-border-color: linear-gradient(to right, #2b9348,#70e000,#ccff33, ffff3f); /* Gradient border */
+    -fx-border-width: 2; /* Border thickness */
+    -fx-border-radius: 8; /* Rounded corners */
+    -fx-text-fill: #ffffff; /* White text */
+    /* -fx-font-size: 16px;  Button text size */
+    -fx-padding: 10 20; /* Padding around text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.2, 0, 0); /* Subtle shadow effect */
+}
+
+/* Hover effect for Buttons */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #2b9348,#70e000,#ccff33, ffff3f); /* Gradient fill on hover */
+    -fx-text-fill: #2e2e2e; /* Dark text color on hover */
+    -fx-border-color: transparent; /* No border on hover */
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 10, 0.3, 0, 0); /* Stronger glow on hover */
+}
+
+/* Optional: Add focus effect for Buttons */
+.button:focused {
+    -fx-border-color: linear-gradient(to right, #ccff33, #ffff3f); /* Cyan glow on focus */
+    -fx-border-width: 3;
+}
+
+/* Add padding to make the layout visually balanced */
+.anchor-pane {
+    -fx-padding: 20;
+}

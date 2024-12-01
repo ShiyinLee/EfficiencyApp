@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" stylesheets="@budgettracker.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.efficiencyapp.budgettrackerController">
+    <Label layoutX="502.0" layoutY="24.0" text="Budget Tracker">
+      <font>
+         <Font name="Times New Roman Bold Italic" size="18.0" />
+      </font></Label>
+<!--    <HBox spacing="10" />-->
+
+    <TableView fx:id="expenseTable" layoutX="14.0" layoutY="67.0" prefHeight="275.0" prefWidth="446.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="descriptionColumn" prefWidth="162.0" text="Description" />
+            <TableColumn fx:id="amountColumn" prefWidth="283.0" text="Amount (€)" />
+        </columns>
+    </TableView>
+
+    <Label fx:id="totalExpenseLabel" layoutX="14.0" layoutY="377.0" text="Total Expense: €">
+      <font>
+         <Font name="Times New Roman" size="20.0" />
+      </font></Label>
+    <Button layoutX="494.0" layoutY="416.0" onAction="#GoToMenu" text="back to menu">
+      <font>
+         <Font name="Times New Roman" size="15.0" />
+      </font></Button>
+     <Button layoutX="345.0" layoutY="13.0" onAction="#handleAddExpense" text="Add Expense" />
+     <TextField fx:id="amountField" layoutX="178.0" layoutY="13.0" prefHeight="41.0" prefWidth="160.0" promptText="Amount" />
+     <TextField fx:id="descriptionField" layoutX="7.0" layoutY="13.0" prefHeight="41.0" prefWidth="160.0" promptText="Description" />
+</AnchorPane>

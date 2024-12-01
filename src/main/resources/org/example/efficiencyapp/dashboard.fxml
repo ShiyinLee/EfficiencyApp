@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480" prefWidth="640" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.efficiencyapp.dashboardController">
+    <Button layoutX="245.0" layoutY="155.0" onAction="#ShowToDoList" text="To-Do-List">
+      <font>
+         <Font name="Times New Roman Bold" size="20.0" />
+      </font></Button>
+    <Label layoutX="117.0" layoutY="76.0" text="3 in 1 Efficiency App!">
+      <font>
+         <Font name="Times New Roman Bold Italic" size="40.0" />
+      </font></Label>
+    <Button layoutX="231.0" layoutY="231.0" onAction="#ShowBudgetTracker" text="Budget Tracker">
+      <font>
+         <Font name="Times New Roman Bold" size="20.0" />
+      </font></Button>
+    <Button layoutX="239.0" layoutY="308.0" onAction="#ShowTimeTracker" text="Time Tracker">
+      <font>
+         <Font name="Times New Roman Bold" size="20.0" />
+      </font></Button>
+</AnchorPane>

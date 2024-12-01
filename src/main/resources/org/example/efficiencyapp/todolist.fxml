@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+           stylesheets="@todolist.css" fx:controller="org.example.efficiencyapp.todolistController">
+
+         <VBox fx:id="dashboard" alignment="CENTER" layoutX="185" layoutY="160" spacing="20" visible="true">
+    <Label text="To-do List">
+        <font>
+            <Font name="Times New Roman Bold Italic" size="35.0" />
+        </font>
+    </Label>
+    <Button fx:id="goalButton" onAction="#handleGoalButtonClick" text="Today's Goal">
+        <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+        </font>
+    </Button></VBox>
+
+      <VBox fx:id="taskScreen" alignment="CENTER" layoutX="166.0" spacing="10" visible="false">
+       <TextField fx:id="titleField" layoutX="40.0" layoutY="30.0" promptText="Enter title (e.g., Date or Subject)">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></TextField>
+<!--       <Button layoutX="28.0" layoutY="448.0" onAction="#handleBackButtonClick" text="Back to Dashboard" />-->
+       <TextField fx:id="taskField" layoutX="40.0" layoutY="288.0" promptText="Enter a task">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></TextField>
+       <Button layoutX="86.0" layoutY="330.0" onAction="#handleAddTask" text="Add Task">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Button>
+       <ListView fx:id="taskListView" layoutX="301.0" layoutY="161.0" />
+<!--       <Label layoutX="78.0" layoutY="30.0" text="To-Do List Dashboard" />-->
+    </VBox>
+
+    <Button layoutX="503.0" layoutY="442.0" onAction="#GoToMenu" text="back to menu">
+        <font>
+            <Font name="Times New Roman" size="15.0" />
+        </font></Button>
+
+
+</AnchorPane>
